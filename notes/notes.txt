@@ -1,0 +1,64 @@
+pseudocode
+    general rules:
+        trivia game;
+        8 questions (in demo);
+        each question has a timer;
+        if answer is right, "correct!" screen shown for few seconds then back to quiz;
+        if answer is wrong, "incorrect!" screen shown;
+        if timer runs out, shows "out of time!" screen shown;
+        post question screens shown for few seconds, then switches back to quiz with no user input;
+        results screen:
+            timer no longer ticking;
+            shows correct, incorrect, and unanswered questions;
+                results linked to type of screen shown;
+            prompt to start over;
+                start over does not reload, but resets game;
+        screens:
+            start page;
+            trivia:
+                question;
+                correct answer;
+                incorrect answer;
+                out of time;
+            results page;
+        no user input to switch between sub-screens
+    
+    html&css
+        theme: web dev???
+        all centered pages centered
+        start page:
+            <h1> trivia title;
+            start button;
+
+        trivia:
+            <h1> trivia title;
+            <h2> time remaining: x seconds;
+            <h2> question;
+                <h3> answer choices;
+
+            correct:
+                title;
+                time remaining: x seconds;
+                "Correct!";
+                pic?;
+            incorrect:
+                trivia;
+                time remaining: x seconds;
+                "Nope!";
+                "The Correct Answer was: x";
+                pic?;
+            out of time:
+                title;
+                time remaining: 0 seconds;
+                "out of time!";
+                "The Correct Answer was: x";
+                pic?;
+        
+        results:
+            title;
+            time remaining: x seconds;
+            "All done, heres how you did!";
+            "Correct answers: x";
+            "Incorrect Answers: 4";
+            "Unanswered: x";
+            start over button;
