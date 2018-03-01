@@ -23,7 +23,7 @@ GENERAL RULES
     no user input to switch between sub-screens
     theme:
         86!web dev???
-        internet/tech trivia, when internet was created, first browser, when facebook was created, CEOetc;
+        internet/tech trivia, when internet was created, first browser, when facebook was created, CEO, etc;
         if answer scored correctly for that subject, have question get progressively harder, if not go back to easy question in other subject
         detect if user uses google? if window minimized or not active???
         user can choose between categories
@@ -33,40 +33,40 @@ QUESTIONS
     facebook:
         what is it;
         created by;
-        first ceo;
-        current ceo;
+        first CEO;
+        current Correct;
         headquarters;
         year facebook was created;
         current valuation;
     apple
         what is it;
         created by;
-        first ceo;
-        current ceo;
+        first CEO;
+        current CEO;
         headquarters;
         year google was created;
         current valuation;
     google
         what is it;
         created by;
-        first ceo;
-        current ceo;
+        first CEO;
+        current CEO;
         headquarters;
         year google was created;
         current valuation;
     amazon
         what is it;
         created by;
-        first ceo;
-        current ceo;
+        first CEO;
+        current CEO;
         headquarters;
         year google was created;
         current valuation;
-    microsoft
+    Microsoft
         what is it;
         created by;
-        first ceo;
-        current ceo;
+        first CEO;
+        current CEO;
         headquarters;
         year google was created;
         current valuation;
@@ -122,6 +122,12 @@ PSEUDOCODE: HTML
         start over button;
 
 JAVASCRIPT
+    what do I want to happen? what do I need?
+        start page;
+        timer;
+        start button;
+
+    function
     
 
 

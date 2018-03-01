@@ -11,32 +11,32 @@
         <title>Trivia Game</title>
     </head>
     <body>
-        <main class="container">
-            <!-- title -->
-            <div class="row">
-                <div class="col">
-                    <h1 class="row justify-content-center trivia-title`">Tech Trivia</h1>
-                </div>
+        <!-- title -->
+        <header class="container">
+             <div class="row justify-content-center ">
+                <h1 class="trivia-title">Tech Trivia</h1>
             </div>
+        </header>
+        <main class="container">
             <!-- timer -->
             <div class="row">
                 <div class="col">
-                    <h2 class="row justify-content-center time-remaining">Time Remaining: 00:00</h2>
+                    <h2 class="row justify-content-center time-remaining"></h2>
                 </div>
             </div>
             <!-- question -->
             <div class="row">
                 <div class="col">
-                    <h2 class="row justify-content-center question">How do you pronounce "gif"?</h2>
+                    <h2 class="row justify-content-center question"></h2>
                 </div>
             </div>
             <!-- answer choices -->
             <div class="row justify-content-center">
                 <div class="col-3">
-                    <p class="answer-choice-1">A. Gif</p>
-                    <p class="answer-choice-2">B. Jif<p>
-                    <p class="answer-choice-3">C. What's a gif?</p>
-                    <p class="answer-choice-4">D. Yes.</p>
+                    <p class="answer-choice-1"></p>
+                    <p class="answer-choice-2"></p><p>
+                    <p class="answer-choice-3"></p>
+                    <p class="answer-choice-4"></p>
                 </div>
             </div>
             <!-- correct -->
@@ -57,7 +57,7 @@
             <!-- timeout -->
             <div class="row justify-content-center">
                 <div class="col-3">
-                    <h3 class="timeout"></h3>
+                    <h3 class="timeup"></h3>
                     <p class="correct-answer"></p>
                     <img class="img-correct-answer" scr="" alt="" />
                 </div>
@@ -71,10 +71,17 @@
                     <p class="unanswered-count"></p>
                 </div>
             </div>
+            <!-- start -->
+            <div class="row justify-content-center">
+                <div class="col-2">
+                    <button class="start">Start!</button>
+                </div>
+            </div>
+
             <!-- restart -->
             <div class="row justify-content-center">
                 <div class="col-2">
-                    <button class="restart">Start Over?</button>
+                    <!-- <button class="restart"></button> -->
                 </div>
             </div>
         </main>
@@ -84,6 +91,7 @@
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="assets/javascript/app.js"></script> 
     </body>
 
 </html>
