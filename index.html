@@ -7,6 +7,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
         <title>Trivia Game</title>
     </head>
@@ -18,6 +19,33 @@
             </div>
         </header>
         <main class="container">
+            <div class="row justify-content-center text-center">
+                <form>
+                    <small class="form-text text-muted">Give me some bands, dude. </small>
+
+                    <div class="form-group">
+                        <label for="band-input"></label>
+                        <input type="text" class="form-control" id="band-input-1" placeholder="Band #1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="band-input"></label>
+                        <input type="text" class="form-control" id="band-input-2" placeholder="Band #2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="band-input"></label>
+                        <input type="text" class="form-control" id="band-input-3" placeholder="Band #3">
+                    </div><br>
+
+                    <button id="add-band" type="submit" class="btn btn-primary">Search Dude</button>
+                </form>          
+            </div>
+        
+
+
+
+
             <!-- timer -->
             <div class="row">
                 <div class="col">
@@ -72,12 +100,12 @@
                     <p class="unanswered-count"></p>
                 </div>
             </div>
-            <!-- start -->
+            <!-- start
             <div class="row justify-content-center">
                 <div class="col-2">
                     <button class="start">Start!</button>
                 </div>
-            </div>
+            </div> -->
 
             <!-- restart -->
             <div class="row justify-content-center">
@@ -93,6 +121,7 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="notes/test.js"></script> 
+        <!-- <script src="assets/javascript/app.js"></script>  -->
     </body>
 
 </html>
