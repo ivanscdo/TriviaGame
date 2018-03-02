@@ -21,13 +21,17 @@ GENERAL RULES
             out of time;
         results page;
     no user input to switch between sub-screens
-    theme:
+    theme: 86
         86!web dev???
         internet/tech trivia, when internet was created, first browser, when facebook was created, CEO, etc;
         if answer scored correctly for that subject, have question get progressively harder, if not go back to easy question in other subject
         detect if user uses google? if window minimized or not active???
         user can choose between categories
         as timer ticks down, change background to red etc
+    new theme:
+        use last.fm api to ask user for 3 bands
+        generate questions (really only two per band year formed and city they;re from);
+        
 
 QUESTIONS
     facebook:
@@ -128,6 +132,8 @@ JAVASCRIPT
         start button;
 
     function
+
+    build questions dynamically! have object with parts of questions to grab from
     
 
 
