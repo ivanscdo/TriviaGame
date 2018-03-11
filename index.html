@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-        <title>Trivia Game</title>
+        <title>TriviaGame</title>
     </head>
-    <body>
+    <body class="doWhatYouWant">
         <!-- title -->
         <header class="container">
              <div class="row justify-content-center ">
@@ -21,8 +21,8 @@
         <main class="container">
             <!-- form -->
             <div class="row justify-content-center text-center">
-                <form>
-                    <small class="form-text text-muted">Give me some of your favorite music stuff dude. </small>
+                <form class="quiz">
+                    <small class="form-text text-muted">Before we begin, give me some of your favorite music stuff. </small>
 
                     <div class="form-group">
                         <label for="band-input"></label>
@@ -39,60 +39,67 @@
                         <input type="text" class="form-control" id="band-input-3" placeholder="Any Song from that Album">
                     </div><br>
 
-                    <button id="add-band" type="submit" class="btn btn-primary">Search Dude</button>
+                    <button id="add-band" type="submit" class="btn btn-primary start">Start the Quiz!</button>
                 </form>          
             </div>
        
 
             <!-- timer -->
-            <div class="row">
-                    <div class="col">
-                        <h2 class="row justify-content-center time-remaining"></h2>
-                        <h2 id="display" class="row justify-content-center"></h2>
-                    </div>
+            <div class="row timer">
+                <div class="col">
+                    <h2 class="row justify-content-center time-remaining"></h2>
+                    <h2 id="display" class="row justify-content-center"></h2>
                 </div>
+            </div>
 
             
             <!-- first question -->
-            <div class="row">
+            <div class="row q1">
                 <div class="col">
                     <h2 class="row justify-content-center first question"></h2>
-            <!-- answer choices -->
-            <div class="row justify-content-center">
-                    <div class="col-3 first answer-choices">
-                        <p class="first answer-choice-1"></p>
-                        <p class="first answer-choice-2"></p>
-                        <p class="first answer-choice-3"></p>
-                        <p class="first answer-choice-4"></p>
+                    <div class="row justify-content-center">
+                        <div class="col-3 first answer-choices">
+                            <p class="first answer-choice-1"></p>
+                            <p class="first answer-choice-2"></p>
+                            <p class="first answer-choice-3"></p>
+                            <p class="first answer-choice-4"></p>
+                        </div>
                     </div>
-                </div>
-
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <h3 class="first result-title"></h3>
+                            <p class="first result-choice"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- second question -->
-            <div class="row">
+            <div class="row q2">
                 <div class="col">
                     <h2 class="row justify-content-center second question"></h2>
-            <!-- answer choices -->
-            <div class="row justify-content-center">
-                    <div class="col-3 second answer-choices">
-                        <p class="second answer-choice-1"></p>
-                        <p class="second answer-choice-2"></p>
-                        <p class="second answer-choice-3"></p>
-                        <p class="second answer-choice-4"></p>
+                    <div class="row justify-content-center">
+                        <div class="col-3 second answer-choices">
+                            <p class="second answer-choice-1"></p>
+                            <p class="second answer-choice-2"></p>
+                            <p class="second answer-choice-3"></p>
+                            <p class="second answer-choice-4"></p>
+                        </div>
                     </div>
-                </div>
-
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <h3 class="second result-title"></h3>
+                            <p class="second result-choice"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- third question -->
-            <div class="row">
-                    <div class="col">
-                        <h2 class="row justify-content-center third question"></h2>
-                <!-- answer choices -->
-                <div class="row justify-content-center">
+            <div class="row q3">
+                <div class="col">
+                    <h2 class="row justify-content-center third question"></h2>
+                    <div class="row justify-content-center">
                         <div class="col-3 third answer-choices">
                             <p class="third answer-choice-1"></p>
                             <p class="third answer-choice-2"></p>
@@ -100,84 +107,37 @@
                             <p class="third answer-choice-4"></p>
                         </div>
                     </div>
-    
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <h3 class="third result-title"></h3>
+                            <p class="third result-choice"></p>
+                        </div>
                     </div>
-            </div>
-                        
-            
-
-
-
-
-
-            <!-- correct/incorrect/timeup -->
-            <div class="row justify-content-center">
-                <div class="col-4 results">
-                    <h3 class="result-title"></h3>
-                    <div class="result-choice"></div>
-                    <img src="" alt="" />
                 </div>
             </div>
 
-            <!-- BEGIN DEPRECATED-->
-            <!-- correct -->
-            <!-- <div class="row justify-content-center">
-                <div class="col-3">
-                    <h3 class="yup"></h3>
-                    <img src="" alt="" />
-                </div>
-            </div> -->
-            <!-- incorrect -->
-            <!-- <div class="row justify-content-center">
-                <div class="col-3">
-                    <h3 class="nope"></h3>
-                    <p class="correct-answer"></p>
-                    <img class="img-correct-answer" src="" alt="" />
-                </div>
-            </div> -->
-            <!-- timeout -->
-            <!-- <div class="row justify-content-center">
-                <div class="col-3">
-                    <h3 class="timeup"></h3>
-                    <p class="correct-answer"></p>
-                    <img class="img-correct-answer" scr="" alt="" />
-                </div>
-            </div> -->
-            <!-- END DEPRECATED -->
-
-
-                        <!-- final results -->
+            <!-- timeup -->
             <div class="row">
-                <div class="col-3">
-                    <h3 class="row justify-content-center all-done"></h3>
-                    <p class="correct-count"></p>
-                    <p class="incorrect-count"></p>
-                    <p class="unanswered-count"></p>
+                <div class="col">
+                    <h3 class="row justify-content-center timeup"></h3>
+                    <p class="row justify-content-center wrong"></p>
+                    <p class="row justify-content-center unanswered"></p>
+                    <p class="row justify-content-center right"></p>
                 </div>
             </div>
-            
-            <!-- start
-            <div class="row justify-content-center">
-                <div class="col-2">
-                    <button class="start">Start!</button>
-                </div>
-            </div> -->
 
             <!-- restart -->
             <div class="row justify-content-center">
                 <div class="col-2">
-                    <!-- <button class="restart"></button> -->
+                    <button class="btn btn-primary restart">Restart the Quiz!</button>
                 </div>
             </div>
+
         </main>
         
-
-
-
-
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="notes/test.js"></script> 
-        <!-- <script src="assets/javascript/app.js"></script>  -->
+        <!-- <script src="notes/test.js"></script>  -->
+        <script src="assets/javascript/app.js"></script> 
     </body>
 
 </html>
