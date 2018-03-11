@@ -136,4 +136,9 @@ JAVASCRIPT
     build questions dynamically! have object with parts of questions to grab from
     
 
+give me your favorite band, album, song off that album
+quiz band formed
+album released
+track #
+
 
